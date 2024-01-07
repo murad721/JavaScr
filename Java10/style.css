@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    outline: none !important;
+}
+
+.btn-group{
+    margin-left: 25%;
+}
+
+.info-p{
+    font-size: 17px;
+    color: red;
+    width: 100%;
+}

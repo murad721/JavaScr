@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 50px auto;
+}
+
+header {
+  position: relative;
+  background-image: linear-gradient(rgba(168, 99, 99, 0),rgb(17, 10, 17));
+}
+
+.logo-block {
+  position: absolute;
+  width: 210px;
+  height: 110px;
+  z-index: 5;
+  bottom: 500px;
+  left: 5px;
+  background: url('./img/logo.png');
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+  transition: 500ms ease;
+}
+
+
+.logo-block:hover {
+  /* background-color: brown; */
+  transform: scale(1.1);
+}
+
+.left-present {
+  background: url('./img/slide.png') no-repeat;
+  width: 9.9%;
+  height: 500px;
+  position: absolute;
+  top: 89px;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+}
+
+.right-present {
+  background: url('./img/slide.png') no-repeat;
+  width: 9.9%;
+  height: 500px;
+  position: absolute;
+  right: 0;
+  top: 89px;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+}
+
+.selection div{
+  display: inline-block;
+  background-color: black;
+  color: white;
+  width: 9%;
+  text-align: center;
+  padding: 10px 20px;
+  position: relative;
+  bottom: 610px;
+  left: 14%;
+  margin-right: 12px;
+  cursor: pointer;
+  /* border: 1px solid blue; */
+  transition: 500ms ease;
+}
+
+.selection div:hover {
+background-color: brown;
+transform: scale(1.1);
+}
+
+header .about-btn {
+  width: 12%;
+  height: 39px;
+  top: 29px;
+  left: 1155px;
+  position: relative;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.571);
+  color: white;
+  border: none;
+  /* margin-right: 11px; */
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: 500ms ease;
+}
+
+header .about-btn:hover {
+  background-color: brown;
+  transform: scale(1.1);
+}
+
+header .about-window {
+  width: 40%;
+  left:  600px;
+  background-color: black;
+  position: absolute;
+  top: 75px;
+  transition: 0.6s;
+}
+
+header .about-window:hover{
+  border: 2px solid yellow;
+}
+
+header .about-window h2{
+  font-size: 18px;
+  color: white;
+  padding: 3% 5%;
+}
+
+header .about-window p{
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(196, 178, 178);
+  padding: 0 5%;
+  line-height: 20px;
+}
+
+header .about-window hr{
+  width: 70%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+header .about-window h3{
+  padding: 0 5%;
+  color: white;
+  font-size: 16px;
+  padding: 2% 5%;
+}
+
+header .shop-basket {
+  width: 30px;
+  height: 30px;
+  float: right;
+  position: relative;
+  right: 90px;
+  top: 15px;
+  cursor: pointer;
+  transition: color,transform 500ms ease;
+  border: 3px solid black;
+  border-radius: 60px;
+  padding: 1%;
+}
+
+header .shop-basket:hover,
+header .shop-basket.active {
+  color: red;
+  border: 3px solid red;
+  transform: scale(1.1);
+}
+
+header .shop-basket-window {
+  position: absolute;
+  top: 90px;
+  z-index: 3;
+  right: 60px;
+  width: 400px;
+  min-height: 100px;
+  background-color: rgb(253, 233, 233);
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.trash-btn {
+  position: relative;
+  float: right;
+  top: -20px;
+  cursor: pointer;
+  transition: transform 500ms ease;
+}
+
+.trash-btn:hover {
+  transform: scale(1.5);
+}
+
+.basket-none h2{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+header .shop-basket-window .item{
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+header .shop-basket-window .item h2{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+header .shop-basket-window .item p{
+  color:  gray;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+header .shop-basket-window .item img {
+  width: 70px;
+  float: left;
+  margin-right: 20px;
+}
+
+header .presentation {
+  margin: 50px auto;
+  background: url('./img/slide.png') no-repeat;
+  width: 80%;
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-color: lightgray;
+}
+
+header .presentation::after {
+  /* content: 'Лучшие цены на всю технику'; */
+  position: absolute;
+  top: 200px;
+  left: 150px;
+  width: 300px;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+}
+
+header .presentation::before {
+  /* content: 'На ваш выбор'; */
+  position: absolute;
+  top: 350px;
+  left: 150px;
+  width: 300px;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+}
+
+.center-block {
+  position: absolute;
+  width: 100%;
+  /* margin: 5% 0; */
+  height: 50px;
+  top: 620px;
+  background-image: linear-gradient(lightgray,white);
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 1% 0;
+
+}
+
+main {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-color: rgb(200, 203, 207); */
+  margin: 30px auto;
+}
+
+main .item {
+  width: 30%;
+  margin-bottom: 50px;
+  /* margin-left: 5%; */
+  overflow: hidden;
+  position: relative;
+  left: 5%;
+  padding-bottom: 20px;
+  /* background-color: gainsboro; */
+}
+
+main .item img {
+  width: 50%;
+  transition: transform 500ms ease;
+  /* height: 350px; */  
+}
+
+main .item img:hover {
+  transform: scale(1.05);
+}
+
+main .item h2 {
+  font-size: 17px;
+  margin-top: 2%;
+}
+
+main .item p {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 3% 0;
+  color: rgb(81, 79, 79);
+}
+
+main .add-to {
+  position: absolute;
+  /* right: 100px; */
+  left: 110px;
+  bottom: 0px;
+  background-color: black;
+  color: white;
+  width: 80px;
+  font-size: 13px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 500ms ease;
+}
+
+main .add-to:hover {
+  transform: scale(1.3) translateY(-5px);
+}
+
+/* .mains {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+  background-image: linear-gradient(lightgray,white);
+  padding: 2% 0;
+}
+
+footer a {
+  text-decoration: none;
+  border: none;
+  transition: 0.4s;
+}
+
+footer a:hover {
+  /* font-size: 17px; */
+  color: red;
+  font-weight: bold;
+}
+
+footer hr {
+  width: 50%;
+  margin: 1% auto;
+}

@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+}
+
+.main-container{  
+    width: 75%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inner-container{
+    border: 1px solid lightgray;
+    background-image: linear-gradient(darkblue,darkred);
+    transition: 0.5s;
+    border-radius: 50px;
+    overflow: hidden;
+    text-align: center;
+    width: 32.33%;
+    margin: 0.5%;
+}
+
+.inner-container:hover{
+    box-shadow: 0 0 20px 10px gray;
+}
+
+.inner-container h2{
+    margin-top: 12px;
+    color: white;
+}
+
+.inner-container p{
+    color: white;
+    font-size: 18px;
+}
